@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form
+      action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php"
+      method="post"
+      class="form"
+    >
+      <!-- input boxes -->
+      <label for="name" class="form__label"
+        >name
+        <input type="text" name="name" class="form__text" />
+      </label>
+
+      <label for="email" class="form__label"
+        >email
+        <input type="text" name="email" class="form__text" />
+      </label>
+
+      <label for="batch" class="form__label"
+        >choose batch
+        <select name="batch" id="batch" class="form__text">
+          <option value="winter-2020">winter 2020</option>
+          <option value="autumn-2020">autumn 2020</option>
+          <option value="spring-2020">spring 2020</option>
+        </select>
+      </label>
+
+      <!-- radio dials -->
+
+      <label for="pre-course" class="form__label">
+        did you complete the pre-course task?<br />
+        <div class="form__radios-checks">
+          <input type="radio" name="pre-course" value="yes" /><span
+            class="form__input-label"
+            >yes</span
+          >
+          <input type="radio" name="pre-course" value="no" /><span
+            class="form__input-label"
+            >no</span
+          >
+        </div>
+      </label>
+
+      <!-- tick boxes -->
+
+      <label for="fav-exer" class="form__label">
+        choose your favourite exercises <br />
+        <div class="form__radios-checks">
+          <input
+            type="checkbox"
+            name="fav-exer[css]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label">CSS selectors</span>
+          <br />
+          <input
+            type="checkbox"
+            name="fav-exer[book]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label">Book page page</span> <br />
+          <input
+            type="checkbox"
+            name="fav-exer[belfast]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label"
+            >Belfast International Kindergarton</span
+          >
+          <br /><input
+            type="checkbox"
+            name="fav-exer[crownsest]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label">Crownsnest Retreat</span>
+          <br /><input
+            type="checkbox"
+            name="fav-exer[google]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label">Google page</span> <br /><input
+            type="checkbox"
+            name="fav-exer[doc-page]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label">Documentation page</span>
+          <br /><input
+            type="checkbox"
+            name="fav-exer[aneta]"
+            value="true"
+            class="form__check-boxes"
+          /><span class="form__input-label"
+            >Aneta Webbie Personal Portfolio page</span
+          >
+          <br />
+        </div>
+      </label>
+
+      <!-- feedback field -->
+
+      <label for="feedback" class="form__label"
+        >write feedback<br />
+        <textarea
+          name="feedback"
+          id="feedback"
+          cols="40"
+          rows="5"
+          class="form__text-area"
+        ></textarea></label
+      ><br />
+      <!-- submit -->
+      <p class="form__submit-div">
+        <input type="submit" value="submit" class="form__submit-button" />
+      </p>
+    </form>
+  </body>
+</html>
